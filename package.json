@@ -1,0 +1,27 @@
+{
+  "name": "resume_2026",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/generate-project-index.mjs && nuxt build",
+    "dev": "nuxt dev",
+    "generate": "node scripts/generate-project-index.mjs && nuxt generate",
+    "projects:index": "node scripts/generate-project-index.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/icon": "^2.2.2",
+    "@nuxt/ui": "^4.8.1",
+    "@pinia/nuxt": "^0.11.3",
+    "dompurify": "^3.4.14",
+    "eslint": "^10.4.1",
+    "nuxt": "^4.4.6",
+    "photoswipe": "^5.4.4",
+    "pinia": "^3.0.4",
+    "tailwindcss": "^4.3.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "TPMI精準醫療管理平台",
+  "description": "針對TPMI個案管理，可使用barcode機快速收案與調整收案狀態，並依據中研究回傳之報告檔(JSON)，快速套版並生成TPMI檢測結果文件。",
+  "role": "系統開發、流程優化、API串接、溝通協調",
+  "result": "即時生成 TPMI 報告，整合三院個案收案資訊，協助個案師掌握收案狀況與進度，提升個案管理效率，並利於後續追蹤與管理。",
+  "tools": ["C#",".NET","WebService","IIS","JavaScript"]
+}

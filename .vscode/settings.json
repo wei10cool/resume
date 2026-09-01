@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.classFunctions": ["defineAppConfig"]
+}
+//讓tailwindcss的class在vue文件中能夠被識別，並且在字符串中也能夠被識別，這樣就可以在vue文件中使用tailwindcss的class了
