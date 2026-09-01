@@ -20,6 +20,7 @@ npm run projects:index
 
 ## 注意  
 每次PUSH上gitHub會自動執行```npm run generate```至GitHub Pages  
+因gitHub上的repository已有設定Action動作  
 要能正常瀏覽頁面需要設定repository為 <span style="color:red">公開</span>  
 
 ```bash
