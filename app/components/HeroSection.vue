@@ -23,7 +23,7 @@
     <h2
       class="text-5xl font-black text-blue-400 mt-2 overflow-hidden whitespace-nowrap border-r-2 border-blue-400 animate-typing"
     >
-      JianWei Wen
+      AWei
     </h2>
 
     <!-- Subtitle -->
