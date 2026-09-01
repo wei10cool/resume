@@ -16,14 +16,14 @@
 
     <!-- Hi text -->
     <h1 class="text-4xl font-bold mt-6 opacity-0 animate-fade-in-up animation-delay-200">
-      Hi, I'm
+      Hi , I'm
     </h1>
 
     <!-- Name (typing effect) -->
     <h2
       class="text-5xl font-black text-blue-400 mt-2 overflow-hidden whitespace-nowrap border-r-2 border-blue-400 animate-typing"
     >
-      AWei
+      A-Wei
     </h2>
 
     <!-- Subtitle -->
@@ -82,7 +82,8 @@
     width: 0;
   }
   to {
-    width: 14ch;
+    /* 打字特效的寬度，根據字數調整 */
+    width: 5ch;
   }
 }
 
