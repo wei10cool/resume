@@ -16,7 +16,7 @@ npm run projects:index
 不產生完整 .output  
   
 ## Other  
-生成靜態網頁，會有資料夾[.output]  
+生成靜態網頁，會自動生成資料夾[.output]  
 ```bash
 npm run generate
 ```
