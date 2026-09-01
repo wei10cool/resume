@@ -9,12 +9,12 @@ node 24.16
 nvm use 24.16
 
 ## 只更新清單
-npm run projects:index
-掃描 projects
-更新 index.json
-不執行 Nuxt generate
-不產生完整 .output
-
+npm run projects:index  
+掃描 projects  
+更新 index.json  
+不執行 Nuxt generate  
+不產生完整 .output  
+  
 ## Setup
 
 Make sure to install dependencies:
@@ -84,5 +84,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

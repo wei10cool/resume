@@ -28,35 +28,13 @@
 
     <!-- Subtitle -->
     <p class="mt-4 max-w-xl text-center text-lg leading-8 text-slate-300 opacity-0 animate-fade-in-up animation-delay-500">
-      Full Stack Developer，專注打造可靠、好用，也能真正解決問題的數位產品。
+      專注於產品架構設計與系統開發，從需求、設計到落地，打造可靠、好用且真正解決問題的數位產品。
     </p>
 
     <div class="mt-8 grid w-full max-w-lg grid-cols-3 gap-3 border-y border-white/10 py-5 text-center opacity-0 animate-fade-in-up animation-delay-500">
-      <div><strong class="block text-2xl font-black text-white">3+</strong><span class="text-xs text-slate-400">年開發經驗</span></div>
-      <div><strong class="block text-2xl font-black text-white">10+</strong><span class="text-xs text-slate-400">完成專案</span></div>
-      <div><strong class="block text-2xl font-black text-white">100%</strong><span class="text-xs text-slate-400">持續學習</span></div>
-    </div>
-
-    <!-- Buttons (Nuxt UI) -->
-    <div class="flex gap-4 mt-8 opacity-0 animate-fade-in-up animation-delay-700">
-      <UButton
-        size="lg"
-        color="primary"
-        icon="i-heroicons-envelope"
-        to="#contact"
-      >
-        聯絡我
-      </UButton>
-
-      <UButton
-        size="lg"
-        variant="outline"
-        icon="i-simple-icons-github"
-        to="https://github.com"
-        target="_blank"
-      >
-        GitHub
-      </UButton>
+      <div><strong class="block text-2xl font-black text-white">10+</strong><span class="text-xl text-slate-400">年系統開發經驗</span></div>
+      <div><strong class="block text-2xl font-black text-white">全端</strong><span class="text-xl text-slate-400">產品與系統開發</span></div>
+      <div><strong class="block text-2xl font-black text-white">100%</strong><span class="text-xl text-slate-400">持續精進與產品優化</span></div>
     </div>
 
     <!-- Scroll indicator -->
