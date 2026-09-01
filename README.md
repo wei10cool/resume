@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# awei履歷 
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[網頁連結](https://wei10cool.github.io/resume_2026/)
 
 ## 環境
 node 24.16
@@ -21,7 +21,7 @@ npm run projects:index
 ## 注意  
 每次PUSH上gitHub會自動執行```npm run generate```至GitHub Pages  
 因gitHub上的repository已有設定Action動作  
-要能正常瀏覽頁面需要設定repository為 <font color="red">公開</font>  
+要能正常瀏覽頁面需要設定repository為 [**公開**] 
 
 ```bash
 npm run generate
