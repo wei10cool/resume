@@ -17,6 +17,11 @@ npm run projects:index
   
 ## Other  
 生成靜態網頁，會自動生成資料夾[.output]  
+
+## 注意  
+每次PUSH上gitHub會自動執行```npm run generate```至GitHub Pages  
+要能正常瀏覽頁面需要設定repository為 <span style="color:red">公開</span>  
+
 ```bash
 npm run generate
 ```
