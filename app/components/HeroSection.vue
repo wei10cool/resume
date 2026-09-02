@@ -1,18 +1,20 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 
+const { app: { baseURL } } = useRuntimeConfig()
+
 const intro = ref({
   hiText: '',
   name: '',
   subtitle: '',
   stats: [
-    { value: '10+', label: '年系統開發經驗' },
-    { value: '全端', label: '產品與系統開發' },
-    { value: '100%', label: '持續精進與產品優化' }
+    { value: '', label: '' },
+    { value: '', label: '' },
+    { value: '', label: '' }
   ]
 })
 const isReady = ref(false)
-const avatar = ref('/avatar.png')
+const avatar = ref(`${baseURL}avatar.png`)
 
 const pickIntroValue = (values, fallback = '') => {
   for (const value of values) {
@@ -28,7 +30,7 @@ const resolveHeadshot = async () => {
   const candidates = ['Headshot.png', 'Headshot.jpg', 'Headshot.jpeg']
 
   for (const fileName of candidates) {
-    const filePath = `/intro/images/${fileName}`
+    const filePath = `${baseURL}intro/images/${fileName}`
 
     try {
       const response = await fetch(filePath, { method: 'HEAD' })
@@ -41,12 +43,12 @@ const resolveHeadshot = async () => {
     }
   }
 
-  avatar.value = '/avatar.png'
+  avatar.value = `${baseURL}avatar.png`
 }
 
 const loadIntro = async () => {
   try {
-    const response = await fetch('/intro/desc.txt')
+    const response = await fetch(`${baseURL}intro/desc.txt`)
 
     if (!response.ok) {
       return
@@ -103,7 +105,7 @@ const typingSteps = computed(() => Math.max(intro.value.name.length, 5))
     <div class="absolute inset-0 from-blue-900/20 to-transparent pointer-events-none" />
     <div v-if="isReady" class="relative z-10 flex flex-col items-center pb-20 text-center">
       <!-- Avatar -->
-      <div class="opacity-0 animate-fade-in-up">
+      <div class="opacity-0 animate-fade-in-up mt-7">
         <img
           :src="avatar"
           class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-xl object-cover"

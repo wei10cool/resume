@@ -1,13 +1,14 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 
+const { app: { baseURL } } = useRuntimeConfig()
 const defaultBrandName = '???'
 const brandName = ref(defaultBrandName)
 const isReady = ref(false)
 
 const loadBrandName = async () => {
   try {
-    const text = await $fetch('/intro/desc.txt', { responseType: 'text' })
+    const text = await $fetch(`${baseURL}intro/desc.txt`, { responseType: 'text' })
     const data = JSON.parse(text)
 
     brandName.value = typeof data?.brandName === 'string' && data.brandName.trim()
