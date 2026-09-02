@@ -1,8 +1,35 @@
+<script setup>
+import { onMounted, ref } from 'vue'
+
+const defaultBrandName = '???'
+const brandName = ref(defaultBrandName)
+const isReady = ref(false)
+
+const loadBrandName = async () => {
+  try {
+    const text = await $fetch('/intro/desc.txt', { responseType: 'text' })
+    const data = JSON.parse(text)
+
+    brandName.value = typeof data?.brandName === 'string' && data.brandName.trim()
+      ? data.brandName.trim()
+      : defaultBrandName
+  } catch {
+    brandName.value = defaultBrandName
+  } finally {
+    isReady.value = true
+  }
+}
+
+onMounted(() => {
+  loadBrandName()
+})
+</script>
+
 <template>
   <div class="bg-slate-50 text-slate-900">
     <header class="fixed inset-x-0 top-0 z-50 px-4 pt-4">
       <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4 rounded-full border border-white/70 bg-white/85 px-3 py-2.5 shadow-lg shadow-slate-200/40 backdrop-blur-md sm:px-5 sm:py-3">
-        <a href="#top" class="font-black tracking-tight text-slate-900">awei<span class="text-blue-500">.</span></a>
+        <a href="#top" class="font-black tracking-tight text-slate-900">{{ isReady?brandName:'' }}<span class="text-blue-500">.</span></a>
         <div class="flex items-center justify-center gap-2.5 text-[10.5px] font-medium text-slate-600 sm:gap-6 sm:text-sm">
           <a href="#skills" class="transition hover:text-blue-600">技能</a>
           <a href="#experience" class="transition hover:text-blue-600">經歷</a>
