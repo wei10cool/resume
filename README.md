@@ -9,7 +9,9 @@ node 24.16
 nvm use 24.16
 
 ## 只更新清單
-npm run projects:index  
+```bash
+ npm run projects:index  
+```  
 掃描 projects  
 更新 index.json  
 不執行 Nuxt generate  
