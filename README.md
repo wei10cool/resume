@@ -1,12 +1,14 @@
 # awei履歷 
 
-[網頁連結](https://wei10cool.github.io/resume_2026/)
+[網頁連結](https://wei10cool.github.io/resume/)
 
 ## 環境
 node 24.16
-
 切換node 版本
-nvm use 24.16
+```
+nvm use 24.16  
+```
+有設定baseURL 在nuxt.config.ts  
 
 ## 只更新清單
 ```bash
