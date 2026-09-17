@@ -5,9 +5,10 @@ const skills = {
   Vue: { icon: 'logos:vue', level: '熟悉',description:'熟悉 Vue 2 元件化開發，具備響應式資料處理、元件拆分與 API 串接經驗；具備 Vue 3 基礎，並有使用 Composition API 開發小型專案的經驗。主要應用於<span class="text-sky-600">養殖專家系統(Vue2)</span>開發，負責功能開發、介面製作與系統功能整合。' },
   Nuxt: { icon: 'logos:nuxt-icon', level: '熟悉',description: '主要使用 Nuxt 2 進行前端系統開發，具備頁面架構、元件化開發、路由管理與 API 串接經驗；另具備 Nuxt 4 基礎，並有實際開發經驗。主要應用於<span class="text-sky-600">養殖專家系統(Nuxt 2)</span>，負責功能開發、介面製作與系統功能整合。' },
   React: { icon: 'logos:react', level: '了解',description: '具備 React 基礎開發能力，曾透過相關課程學習(Hahow)並實作小型網頁專案，了解元件化開發與基本狀態管理，並持續累積 React 開發經驗。' },
-  NestJS: { icon: 'logos:nestjs', level: '熟悉' },
-  '.NET': { icon: 'logos:dotnet', level: '了解' },
-  Docker: { icon: 'logos:docker-icon', level: '了解' },
+  '.NET': { icon: 'logos:dotnet', level: '熟悉',
+    description:'熟悉使用 Visual Studio 進行 .NET 應用程式開發，能進行 API 設計、資料串接、桌面應用程式開發及背景服務處理：<ul class="list-disc space-y-1 pl-6"> <li><span class="text-sky-600">ASP.NET Core Web API</span>：養殖專家系統 API 串接</li> <li><span class="text-sky-600">Web Service</span>：醫院內各式 API 介接（醫病共享決策、檢查排程系統、TPMI 精準醫療管理平台）</li> <li><span class="text-sky-600">WinForms</span>：DICOM 影像擷取、自動下載程式整合、IoT 水質監控平台</li> <li><span class="text-sky-600">Windows Service</span>：IoT 水質監控平台本機數據上傳</li> </ul>' },
+  '.NET Core':{icon: 'logos:dotnet', level: '熟悉'},
+  Docker: { icon: 'logos:docker-icon', level: '了解',description:'' },
   MySQL: { icon: 'logos:mysql', level: '熟悉' },
   postgreSQL:{icon: 'logos:postgresql', level: '了解'},
   Oracle: { icon: 'logos:oracle', level: '熟悉' }
@@ -18,13 +19,13 @@ const skillGroups = [
     title: '前端開發',
     description: '打造流暢且可維護的使用者介面',
     capabilities: ['元件化開發', 'RWD 響應式設計', 'REST API 串接'],
-    names: ['JavaScript', 'Vue', 'Nuxt', 'React']
+    names: ['JavaScript', 'Vue', 'Nuxt', 'React',]
   },
   {
-    title: '後端與資料',
-    description: '設計穩定的 API 與資料服務',
+    title: '後端與應用程式',
+    description: '開發穩定的後端服務與應用程式',
     capabilities: ['API 設計', '資料庫建模', '權限與資料驗證'],
-    names: ['.NET', 'MySQL','postgreSQL','Oracle']
+    names: ['.NET','.NET Core', 'MySQL','postgreSQL','Oracle']
   },
   {
     title: '部署與工具',
