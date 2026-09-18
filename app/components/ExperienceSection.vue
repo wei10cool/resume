@@ -50,7 +50,7 @@ const experiences = [
         "location": "台北市信義區",
         "title": "專案經理",
         "management": "",
-        "period": "2018 / 03 - 2020 / 04",
+        "period": "2015 / 08 - 2018 / 02",
         "summary": "負責各項經營指標程式開發與維護，校務研究SAS視覺化分析，協助臨床資料校正與分析，並提供各項數據視覺化呈現。",
         "achievements": [
             "經營指標日報標警程式與指標數據校正[Oracle]",
