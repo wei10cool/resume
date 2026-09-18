@@ -8,7 +8,7 @@ const experiences = [
         "period": "2021 / 06 - 在職",
         "summary": "負責產品架構規劃、系統開發、跨系統整合與使用者體驗優化。",
         "achievements": [
-            "主導養殖專家系統架構規劃與開發[Vue2, Vuetify、Node.js]",
+            "主導系統架構規劃與開發，整合前端、後端 API、資料庫及 IoT 設備服務。[Vue2、Node.js、.NET、Node-RED、MySQL / PostgreSQL、Docker]",
             "優化Node-RED設備控制與系統穩定性[Node.js、Node-RED、SQLite]",
             "開發API、Service及資料庫架構[.Net、WebService]",
             "統籌團隊進度與專案如期交付"
@@ -33,7 +33,7 @@ const experiences = [
         "title": "程式設計師",
         "management": "",
         "period": "2018 / 03 - 2020 / 04",
-        "summary": "負責醫院內資訊系統開發與維護，協助醫療資料管理及臨床作業流程資訊化、自動化。",
+        "summary": "負責醫院資訊系統開發與維護，具備跨系統 API、WebService、資料庫及醫療設備資料整合經驗，並參與排程、影像處理與臨床作業流程資訊化。",
         "achievements": [
             "檢查排程[C#,MVC,DevExtreme]",
             "放射排程[C#,MVC,DevExtreme]",

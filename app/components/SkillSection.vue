@@ -81,7 +81,7 @@ const skillGroups = [
   {
     title: '後端與應用程式',
     description: '開發穩定的後端服務與應用程式',
-    capabilities: ['API 設計', '資料庫設計', '權限與資料驗證'],
+    capabilities: ['API 設計', '系統服務整合', '資料庫設計'],
     names: ['.NET','Node.js','REST API / WebService']
   },
   {
@@ -120,7 +120,7 @@ const showCapability = (skillName)=>{
       <span>技能</span>
     </h2>
 
-    <p class="mb-8 max-w-2xl text-slate-500">從介面體驗到伺服器部署，我習慣用完整的產品視角思考每一個技術選擇。</p>
+    <p class="mb-8 max-w-2xl text-slate-500">從前端介面、後端服務、資料庫到系統部署，具備完整的系統開發與整合經驗，能依需求串接不同系統、設備與服務，完成從開發到部署的整體流程。</p>
 
     <div class="grid gap-4 md:grid-cols-3">
       <article v-for="group in skillGroups" :key="group.title" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
