@@ -11,7 +11,7 @@ const skills = {
     icon: 'logos:vue',
     level: '熟悉',
     description:
-      '熟悉 Vue 2 元件化開發，具備響應式資料處理、元件拆分與 API 串接經驗；具備 Vue 3 基礎，並有使用 Composition API 開發小型專案的經驗。主要應用於<span class="text-sky-600">養殖專家系統(Vue2)</span>開發，負責功能開發、介面製作與系統功能整合。'
+      '熟悉 Vue 2 元件化開發，具備響應式資料處理、元件拆分與 API 串接經驗；具備 Vue 3 基礎，並有使用 Composition API 開發小型專案的經驗。主要應用於<span class="text-sky-600">養殖專家系統(Vue 2)</span>開發，負責功能開發、介面製作與系統功能整合。'
   },
 
   Nuxt: {
@@ -39,7 +39,7 @@ const skills = {
     icon: 'logos:docker-icon',
     level: '了解',
     description:
-      '了解 Docker 容器化技術，具備 API 建置、映像建立與部署的實務經驗。將 .NET Core Web API 建立為 Docker Image，部署至 Google Cloud VM（Ubuntu）環境進行服務<span class="text-sky-600">佈建與架設</span>，完成 API 服務部署後提供前端網頁進行串接。'
+      '了解 Docker 容器化技術，具備 API 建置、映像建立與部署的實務經驗。將 .NET Core Web API 建立為 Docker Image，部署至 Google Cloud VM（Ubuntu）環境進行<span class="text-sky-600">服務部署</span>，完成 API 服務部署後提供前端網頁進行串接。'
   },
 
   MySQL: {
@@ -49,7 +49,7 @@ const skills = {
       '熟悉 MySQL 與 SQL 語法，具備關聯式資料庫設計與實務操作經驗，能進行資料表規劃、CRUD、JOIN 多表查詢、條件篩選、子查詢及資料彙整；並具備索引、View 的基礎應用，能針對 SQL 查詢與資料庫結構進行<span class="text-sky-600">基本效能調整</span>，並配合後端 API 完成資料存取與整合。'
   },
 
-  postgreSQL: {
+  PostgreSQL: {
     icon: 'logos:postgresql',
     level: '了解',
     description:
@@ -68,33 +68,74 @@ const skills = {
     level: '熟悉',
     description:
       '具備 Node.js 後端開發與 API 串接經驗，並應用於<span class="text-sky-600">IoT 水質監控平台</span>的設備資料處理、系統整合與服務開發。'
-  }
+  },
+
+  'REST API': {
+    icon: 'mdi:api',
+    level: '熟悉',
+    description:
+      '具備 REST API 設計與串接經驗，能依系統需求規劃 API 介面、處理請求參數與回傳資料，並整合前端、後端及資料庫，實際應用於<span class="text-sky-600">養殖專家系統</span>與其他系統開發，完成資料存取與跨系統整合。'
+  },
+  WebService: {
+    icon: 'mdi:web',
+    level: '熟悉',
+    description: '具備 WebService 介接與系統整合經驗，能依不同系統需求進行服務介接、資料交換與格式處理，實際應用於<span class="text-sky-600">醫病共享決策</span>、<span class="text-sky-600">檢查排程系統</span>及<span class="text-sky-600">TPMI 精準醫療管理平台</span>等專案，完成跨系統資料整合與服務串接。'
+  },
+
+  MSSQL: {
+    icon: 'devicon:microsoftsqlserver',
+    level: '了解',
+    description:
+      '了解 Microsoft SQL Server 與 SQL 語法，具備資料表操作、資料查詢及基本資料維護經驗，能配合後端應用程式進行資料存取與整合。'
+  },
+
+  'Node-RED': {
+    icon: 'devicon:nodered',
+    level: '了解',
+    description:
+      '具備 Node-RED 流程式開發與設備資料串接經驗，實際應用於<span class="text-sky-600">IoT 水質監控平台</span>與<span class="text-sky-600">養殖專家系統</span>，進行設備資料蒐集、流程處理與系統整合。'
+  },
+
+Linux: {
+  icon: 'logos:linux-tux',
+  level: '了解',
+  description:
+    '具備 Linux（Ubuntu）環境操作與服務部署經驗，能配合 Docker 建置與部署後端 API 服務，並進行基本的環境設定與服務管理。'
+},
+
+'Google Cloud VM': {
+  icon: 'logos:google-cloud',
+  level: '了解',
+  description:
+    '具備 Google Cloud VM 實務部署經驗，將 Docker 化的<span class="text-sky-600">.NET Core Web API</span>部署至 Ubuntu VM 環境，完成後端服務建置並提供前端系統串接。'
+}
+
 }
 
 const skillGroups = [
   {
     title: '前端開發',
-    description: '打造流暢且可維護的使用者介面',
+    description: '建構可維護的前端架構與使用者介面',
     capabilities: ['元件化開發', 'RWD 響應式設計', 'REST API 串接'],
-    names: ['JavaScript', 'Vue', 'Nuxt', 'React',]
+    names: ['JavaScript', 'Vue', 'Nuxt', 'React']
   },
   {
     title: '後端與應用程式',
-    description: '開發穩定的後端服務與應用程式',
-    capabilities: ['API 設計', '系統服務整合', '資料庫設計'],
-    names: ['.NET','Node.js','REST API / WebService']
+    description: '開發後端服務、API 與應用程式，串接不同系統與服務',
+    capabilities: ['API 設計與開發', '系統服務整合', '應用程式開發'],
+    names: ['.NET','Node.js','REST API','WebService']
   },
   {
     title:'資料庫',
     description: '建構穩定且高效的資料儲存與查詢機制',
-    capabilities: ['資料表設計', 'SQL 查詢與資料處理', '資料庫效能調校'],
-    names:['Oracle','postgreSQL', 'MySQL','MSSQL']
+    capabilities: ['資料表設計','資料庫正規化', 'SQL 查詢與資料處理', 'SQL 與資料庫效能調校'],
+    names:['Oracle','PostgreSQL', 'MySQL','MSSQL']
   },
   {
     title: '部署與系統整合',
-    description: '讓產品穩定交付並整合不同系統與服務',
-    capabilities: ['容器化部署', '開發環境管理', '服務穩定性維護'],
-    names: ['Docker','Node-RED','Linux']
+    description: '整合設備、服務與部署環境，完成系統從開發到上線',
+    capabilities: ['容器化部署', 'Linux／雲端環境部署', '設備與系統整合'],
+    names: ['Docker', 'Node-RED', 'Linux', 'Google Cloud VM']
   }
 ]
 

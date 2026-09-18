@@ -6,7 +6,7 @@ const experiences = [
         "title": "資深工程師",
         "management": "管理職",
         "period": "2021 / 06 - 在職",
-        "summary": "負責產品架構規劃、系統開發、跨系統整合與使用者體驗優化。",
+        "summary": "負責系統架構規劃、系統開發、跨系統整合與產品功能優化。",
         "achievements": [
             "主導系統架構規劃與開發，整合前端、後端 API、資料庫及 IoT 設備服務。[Vue2、Node.js、.NET、Node-RED、MySQL / PostgreSQL、Docker]",
             "優化Node-RED設備控制與系統穩定性[Node.js、Node-RED、SQLite]",
