@@ -6,7 +6,7 @@ const experiences = [
         "title": "資深工程師",
         "management": "管理職",
         "period": "2021 / 06 - 在職",
-        "summary": "負責系統架構規劃、系統開發、跨系統整合與產品功能優化。",
+        "summary": "負責系統架構規劃、系統開發、跨系統整合與產品功能優化，涵蓋前端、後端、資料庫、API 串接及系統部署，並依實際需求進行系統設計與功能開發。",
         "achievements": [
             "主導系統架構規劃與開發，整合前端、後端 API、資料庫及 IoT 設備服務。[Vue2、Node.js、.NET、Node-RED、MySQL / PostgreSQL、Docker]",
             "優化Node-RED設備控制與系統穩定性[Node.js、Node-RED、SQLite]",
@@ -113,7 +113,6 @@ const experiences = [
     <p class="mb-8 max-w-2xl text-slate-500 [text-wrap:pretty]">
       從產品導向的前端開發到系統整合與流程優化，我習慣站在使用者與業務需求的角度思考每一個功能。
     </p>
-
     <div class="relative ml-2 pl-6 before:absolute before:bottom-0 before:left-[11px] before:top-0 before:w-px before:bg-slate-200 md:ml-4">
       <article
         v-for="item in experiences"
@@ -153,5 +152,43 @@ const experiences = [
         </div>
       </article>
     </div>
+<div class="my-6 py-6 border-y border-slate-100">
+  <div class="flex flex-col items-center text-center">
+    <h3 class="text-base font-semibold text-slate-600 mb-4">
+      核心能力
+    </h3>
+
+    <div class="flex flex-wrap justify-center gap-2 max-w-4xl">
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        系統架構規劃
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        前後端開發
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        REST API／WebService
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        資料庫設計與 SQL
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        IoT／設備整合
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        Docker／Linux 部署
+      </span>
+
+      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+        系統維運
+      </span>
+    </div>
+  </div>
+</div>
+
   </section>
 </template>
