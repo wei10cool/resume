@@ -1,7 +1,7 @@
 {
   "title": "養殖專家系統",
   "description": "提供涵蓋「即時監控、數據分析到問題診斷」的<span style='color:red'>一站式養殖管理</span>。即時掌握各養殖池水質與養殖資訊，透過視覺化圖表分析數據變化與差異，結合<span style='color:red'>自動化設備及專家知識庫</span>，快速找出異常原因並提供改善建議，協助養殖人員降低管理風險，提升養殖管理效率。",
-  "role": "負責系統整體架構規劃、功能與作業流程設計、前端功能開發、API 架構規劃，以及跨系統與跨部門整合。<pre style='font-family: monospace; line-height: 1.5;'>　　　　　　　　　<b>養殖專家系統</b>\n　　　　　　　　　　　　│\n　　　　┌─────────────┴─────────────┐\n　　　　↓　　　　　　　　　　　　　　　↓\n　　<b>前端介面</b>　　　　　　　　　　 <b>IoT／設備</b>\nVue／Nuxt／Vuetify　　　　　 Node-RED／設備資料\n　　　　│　　　　　　　　　　　　　　　│\n　　　　└───────────┬───────────────┘\n　　　　　　　　　　　↓\n　　　　　　　　<b>API／Backend</b>\n　　　　　　　 .NET／Node.js\n　　　　　　　　　　　↓\n　　　　　　　　　<b>Database</b>\n　　　　　　　MySQL／PostgreSQL\n　　　　　　　　　　　↓\n　　　　　　　　<b>Deployment</b>\n　　　　　　　 Docker／Ubuntu\n　　　　　　　　　　　↓\n　　　　　　　　　　　Google Cloud VM</pre>",
+  "role": "負責系統整體架構規劃、功能與作業流程設計、前端功能開發、API 架構規劃，以及跨系統與跨部門整合。<pre style='font-family: monospace; line-height: 1.5;'>　　　　　<b>養殖專家系統</b>\n　　　　　　　　│\n　　　　┌───────┴───────┐\n　　　　↓　　　　　　　　↓\n　　<b>前端介面</b>　　　　　 <b>IoT／設備</b>\n　Vue／Nuxt／Vuetify　Node-RED／設備資料\n　　　　└───────┬───────┘\n　　　　　　　　↓\n　　　　　<b>API／Backend</b>\n　　　　　.NET／Node.js\n　　　　　　　　↓\n　　　　　 <b>Database</b>\n　　　　MySQL／PostgreSQL\n　　　　　　　　↓\n　　　　　<b>Deployment</b>\n　　　　 Docker／Ubuntu\n　　　　　　　　↓\n　　　 Google Cloud VM</pre>",
   "result": "整合養殖池即時數據、自動化設備與專家知識，建立從資料蒐集、API 串接、數據分析到異常診斷的完整管理流程，提升現場人員掌握養殖狀況與處理異常的效率，降低人工管理與判斷成本，並建立後續數據分析與 AI 應用的資料基礎。",
   "tools": ["Nuxt2", "Vue2", "Vuetify", ".NET", "Node.js", "MySQL", "PostgreSQL", "Docker", "Node-RED", "Google Cloud VM", "LINE Messaging API"]
 }
