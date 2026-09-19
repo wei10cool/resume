@@ -152,38 +152,49 @@ const experiences = [
         </div>
       </article>
     </div>
-<div class="my-6 py-6 border-y border-slate-100">
+<div class="border-y border-slate-100 py-6">
   <div class="flex flex-col items-center text-center">
-    <h3 class="text-base font-semibold text-slate-600 mb-4">
-      核心能力
-    </h3>
 
-    <div class="flex flex-wrap justify-center gap-2 max-w-4xl">
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+    <div class="flex max-w-4xl flex-wrap justify-center gap-2">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         系統架構規劃
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         前後端開發
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
-        REST API／WebService
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
+        REST API／Web Service
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         資料庫設計與 SQL
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         IoT／設備整合
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         Docker／Linux 部署
       </span>
 
-      <span class="px-3 py-1.5 rounded-md border border-slate-200 bg-white text-slate-700 text-sm">
+      <span
+        class="rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700"
+      >
         系統維運
       </span>
     </div>

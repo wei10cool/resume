@@ -163,7 +163,7 @@ const showCapability = (skillName)=>{
 
     <p class="mb-8 max-w-2xl text-slate-500">從前端介面、後端服務、資料庫到系統部署，具備完整的系統開發與整合經驗，能依需求串接不同系統、設備與服務，完成從開發到部署的整體流程。</p>
 
-    <div class="grid gap-4 md:grid-cols-3">
+    <div class="grid gap-4 md:grid-cols-2">
       <article v-for="group in skillGroups" :key="group.title" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
         <h3 class="text-lg font-bold text-slate-800">{{ group.title }}</h3>
         <p class="mt-2 min-h-10 text-sm leading-5 text-slate-500">{{ group.description }}</p>
