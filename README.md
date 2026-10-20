@@ -3,8 +3,11 @@
 [網頁連結](https://wei10cool.github.io/resume/)
 
 ## 環境
+有使用過可運行的環境
 node 24.16
-切換node 版本
+node 24.22
+
+使用nvm切換node 版本
 ```
 nvm use 24.16  
 ```
@@ -14,10 +17,10 @@ nvm use 24.16
 ```bash
  npm run projects:index  
 ```  
-掃描 projects  
+掃描資料夾「projects」  
 更新 index.json  
 不執行 Nuxt generate  
-不產生完整 .output  
+不會產生完整 .output  
   
 ## Other  
 生成靜態網頁，會自動生成資料夾[.output]  
@@ -27,45 +30,30 @@ nvm use 24.16
 因gitHub上的repository已有設定Action動作  
 要能正常瀏覽頁面需要設定repository為 [**公開**] 
 
+## 架構  
+- 主頁面 pages/index.vue  
+  - 個人 components/HeroSection  
+  - 技能 components/SkillSection  
+  - 經歷 components/ExperienceSection  
+  - 作品 components/ProjectSection  
+
+## 生成佈署檔  
 ```bash
 npm run generate
 ```
-## Setup
-
-Make sure to install dependencies:
-
+## 設定  
+安裝相關套件  
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
+## 開發  
 Start the development server on `http://localhost:3000`:
-
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
 ## Production
 
 Build the application for production:
@@ -73,15 +61,6 @@ Build the application for production:
 ```bash
 # npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -89,13 +68,4 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
