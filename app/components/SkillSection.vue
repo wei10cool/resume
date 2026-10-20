@@ -11,7 +11,7 @@ const skills = {
     icon: 'logos:vue',
     level: '熟悉',
     description:
-      '熟悉 Vue 2 元件化開發，具備響應式資料處理、元件拆分與 API 串接經驗；具備 Vue 3 基礎，並有使用 Composition API 開發小型專案的經驗。主要應用於<span class="text-sky-600">養殖專家系統(Vue 2)</span>開發，負責功能開發、介面製作與系統功能整合。'
+      '熟悉 <span class="text-sky-600">Vue 2</span> 元件化開發，具備響應式資料處理、元件拆分與 API 串接經驗；具備 <span class="text-sky-600">Vue 3</span> 基礎，並有使用 Composition API 開發小型專案的經驗。主要應用於<span class="text-sky-600">養殖專家系統(Vue 2)</span>開發，負責功能開發、介面製作與系統功能整合。'
   },
 
   Nuxt: {
@@ -108,7 +108,14 @@ Linux: {
   level: '了解',
   description:
     '具備 Google Cloud VM 實務部署經驗，將 Docker 化的<span class="text-sky-600">.NET Core Web API</span>部署至 Ubuntu VM 環境，完成後端服務建置並提供前端系統串接。'
-}
+},
+
+'AI應用': {
+  icon: 'logos:openai-icon',
+  level: '了解',
+  description:
+    '具備生成式 AI 工具的實際使用經驗，日常開發中會運用 VS Code 的 <span class="text-sky-600">GitHub Copilot Chat</span>、<span class="text-sky-600">ChatGPT</span>、<span class="text-sky-600">Gemini</span> 等工具輔助程式撰寫、既有程式碼理解、問題排查、錯誤分析及技術方案評估，並用於查詢技術文件與探索不同的實作方式。<br/>能依據實際需求調整提示內容，將 AI 產出作為開發參考，並透過程式測試與邏輯驗證確認結果，提升開發效率與問題解決能力。'
+},
 
 }
 
@@ -132,10 +139,10 @@ const skillGroups = [
     names:['Oracle','PostgreSQL', 'MySQL','MSSQL']
   },
   {
-    title: '部署與系統整合',
+    title: '系統整合及其他',
     description: '整合設備、服務與部署環境，完成系統從開發到上線',
-    capabilities: ['容器化部署', 'Linux／雲端環境部署', '設備與系統整合'],
-    names: ['Docker', 'Node-RED', 'Linux', 'Google Cloud VM']
+    capabilities: ['容器化部署', 'Linux／雲端環境部署', '設備與系統整合','AI 輔助開發與問題排查'],
+    names: ['Docker', 'Node-RED', 'Linux', 'Google Cloud VM','AI應用']
   }
 ]
 
