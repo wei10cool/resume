@@ -1,0 +1,44 @@
+[
+  {
+    "folder": "01.養殖專家系統",
+    "images": [
+      "01.png",
+      "13.png",
+      "15.png",
+      "16.png",
+      "17.png",
+      "20.png"
+    ]
+  },
+  {
+    "folder": "02.IoT 水質監控平台",
+    "images": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
+    ]
+  },
+  {
+    "folder": "03.醫病共享決策",
+    "images": [
+      "01.jpg",
+      "02.gif",
+      "03.jpg"
+    ]
+  },
+  {
+    "folder": "04.檢查排程系統",
+    "images": [
+      "01.png",
+      "02.gif"
+    ]
+  },
+  {
+    "folder": "05.TPMI精準醫療管理平台",
+    "images": [
+      "01.jpg",
+      "02.gif"
+    ]
+  }
+]
