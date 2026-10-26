@@ -163,7 +163,7 @@ const skills = [
     <div class="border-y border-slate-100 py-8">
       <div class="flex flex-wrap justify-center gap-6">
         <div v-for="(skill, index) in skills" :key="index"
-          class="flex h-32 w-32 items-center justify-center rounded-full border-2 border-sky-300 bg-sky-300 p-3 text-center text-lg font-semibold text-sky-700 transition hover:scale-105 hover:bg-sky-50">
+          class="flex h-32 w-32 items-center justify-center rounded-full border-2 border-sky-200 bg-sky-200 p-3 text-center text-lg font-semibold text-sky-500 transition hover:scale-105 hover:bg-sky-50">
           <div v-html="skill"></div>
         </div>
       </div>
