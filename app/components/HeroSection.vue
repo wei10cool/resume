@@ -14,7 +14,7 @@ const intro = ref({
   ]
 })
 const isReady = ref(false)
-const avatar = ref(`${baseURL}avatar.png`)
+const avatar = ref(`${baseURL}avatarWei.png`)
 
 const pickIntroValue = (values, fallback = '') => {
   for (const value of values) {
@@ -27,7 +27,7 @@ const pickIntroValue = (values, fallback = '') => {
 }
 
 const resolveHeadshot = async () => {
-  const candidates = ['Headshot.png', 'Headshot.jpg', 'Headshot.jpeg']
+  const candidates = ['Headshot1.jpg','Headshot2.webp','Headshot.png', 'Headshot.jpg', 'Headshot.jpeg']
 
   for (const fileName of candidates) {
     const filePath = `${baseURL}intro/images/${fileName}`
@@ -43,7 +43,7 @@ const resolveHeadshot = async () => {
     }
   }
 
-  avatar.value = `${baseURL}avatar.png`
+  avatar.value = `${baseURL}avatarWei.png`
 }
 
 const loadIntro = async () => {
