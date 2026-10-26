@@ -1,6 +1,10 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 
+useHead({
+  title: 'awei的個人履歷|軟體工程師|程式開發|專案管理',
+})
+
 const { app: { baseURL } } = useRuntimeConfig()
 const defaultBrandName = '???'
 const brandName = ref(defaultBrandName)
@@ -46,6 +50,7 @@ onMounted(() => {
       <SkillSection />
       <ExperienceSection />
       <ProjectSection />
+      
       <!-- <section id="contact" class="mb-12 overflow-hidden rounded-[2rem] bg-slate-900 px-6 py-12 text-white sm:px-12">
         <div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
@@ -57,5 +62,6 @@ onMounted(() => {
         </div>
       </section> -->
     </main>
+    <FooterSection />
   </div>
 </template>
