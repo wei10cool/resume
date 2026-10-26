@@ -132,7 +132,7 @@ const typingSteps = computed(() => Math.max(intro.value.name.length, 5))
       </p>
 
       <div
-        class="mt-8 grid w-full max-w-lg grid-cols-3 gap-3 border-y border-white/10 py-5 text-center opacity-0 animate-fade-in-up animation-delay-500">
+        class="mt-8 grid w-full max-w-2xl grid-cols-3 gap-3 border-y border-white/10 py-5 text-center opacity-0 animate-fade-in-up animation-delay-500">
         <div v-for="stat in intro.stats" :key="stat.label">
           <strong class="block text-2xl font-black text-white">{{ stat.value }}</strong>
           <span class="text-xl text-slate-400">{{ stat.label }}</span>
@@ -140,11 +140,11 @@ const typingSteps = computed(() => Math.max(intro.value.name.length, 5))
       </div>
 
       <!-- Scroll indicator -->
-      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span class="text-xs text-slate-400">Scroll</span>
 
         <div class="w-5 h-8 border-2 border-slate-400 rounded-full flex justify-center mt-1">
-          <div class="w-1 h-2 bg-slate-400 rounded-full animate-scroll" />
+          <div class="w-1 h-2 bg-red-400 rounded-full animate-scroll" />
         </div>
       </div>
     </div>
