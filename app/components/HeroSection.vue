@@ -27,7 +27,7 @@ const pickIntroValue = (values, fallback = '') => {
 }
 
 const resolveHeadshot = async () => {
-  const candidates = ['Headshot1.jpg','Headshot2.webp','Headshot.png', 'Headshot.jpg', 'Headshot.jpeg']
+  const candidates = ['Headshot3.jpg','Headshot1.jpg','Headshot2.webp','Headshot.png', 'Headshot.jpg', 'Headshot.jpeg']
 
   for (const fileName of candidates) {
     const filePath = `${baseURL}intro/images/${fileName}`
